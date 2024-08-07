@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" type="text/css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/scroll.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/efect.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/dark.css" type="text/css">
+
+    <script src="assets/js/menu.js" defer type="text/javascript"></script>
+    <script src="assets/js/dark.js" defer type="text/javascript"></script>
+    
+    <script>
+        (function() {
+            const theme = localStorage.getItem("theme") || "light";
+            document.documentElement.classList.add(theme);
+        })();
+    </script>
+
+    <title>Estudios</title>
+</head>
+
+<body>
+    <!-- Boton de tema -->
+    <div class="switcher">
+        <button class="switcher__btn">
+
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+        </button>
+    </div>
+    
+    <!-- Layout principal -->
+    <div class="layout">
+
+        <!-- Aside (info) -->
+        <aside class="layout__aside">
+
+            <section class="aside__user-info">
+
+                <!-- Información general -->
+                <div class="user-info__general-info">
+
+                    <div class="user-info__container-image">
+                        <img class="user-info__image" src="assets/img/default_img.jpg" alt="Foto de perfil">
+                    </div>
+
+                    <h2 class="user-info__name">Dilan Acosta</h2>
+                    <h4 class="user-info__job">Desarrollador web / software</h4>
+
+                </div>
+
+                <!-- Menú de navegación -->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="estudios.html" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Estudios</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!-- Links o redes sociales -->
+                <div class="user-info__links">
+
+                    <ul class="user-links__social">
+
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/dilan-acosta/" class="social__link" target="_blank">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Boton del hoja de vida -->
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar hoja de vida</a>
+                </div>
+
+                <!-- Pie de página -->
+                <footer class="user-info__footer">
+                    &copy; 2024 Dilan Acosta
+                </footer>
+
+            </section>
+
+        </aside>
+
+        <!-- Menu responsive -->
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
+        <!-- Contenido principal -->
+        <main class="layout__content">
+
+            <section class="content__page content__resume">
+
+                <header class="resume__header">
+                    <h2 class="resume__title">
+                        <span class="title__color">Estudios</span>
+                    </h2>
+                </header>
+
+                <div class="resume__container">
+
+                    <section class="resume__left">
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Formación <span class="subtitle__color">académica</span></h2>
+                        </header>
+
+                        <div class="resume__timelines">
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2022-2024</h4>
+                                    <span class="timeline__study"></span>
+                                    <span class="timeline__address">Medellín, Antioquia</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Ingenieria en software</h3>
+                                    <p class="timeline__text">
+                                        Tecnológico de Antioquia-Institución Universitaria
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2021-2022</h4>
+                                    <span class="timeline__study"></span>
+                                    <span class="timeline__address">Medellín, Antioquia</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Tecnólogo en sistemas</h3>
+                                    <p class="timeline__text">
+                                        Tecnológico de Antioquia-Institución Universitaria
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2019-2021</h4>
+                                    <span class="timeline__study"></span>
+                                    <span class="timeline__address">Medellín, Antioquia</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Técnico profesional en sistemas</h3>
+                                    <p class="timeline__text">
+                                        Tecnológico de Antioquia-Institución Universitaria
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2017-2018</h4>
+                                    <span class="timeline__study"></span>
+                                    <span class="timeline__address">Caldas, Antioquia</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Técnico en conservación de recursos naturales</h3>
+                                    <p class="timeline__text">
+                                        SENA Centro de Recursos Naturales Renovables
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2018</h4>
+                                    <span class="timeline__study"></span>
+                                    <span class="timeline__address">Itagüí, Antioquia</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Bachiller académico</h3>
+                                    <p class="timeline__text">
+                                        I.E. Carlos Enrique Cortés Herrera
+                                    </p>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Experiencia <span class="subtitle__color">laboral</span></h2>
+                        </header>
+
+                        <div class="resume__timelines">
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2024-2024</h4>
+                                    <span class="timeline__study">Bancolombia S.A.S</span>
+                                    <br>
+                                    <span class="timeline__address">Medellín, Antioquia</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Ingenieria en software (practicas)</h3>
+                                    <p class="timeline__text">
+                                        Durante mis prácticas, mi reto fue desacoplar y migrar la infraestructura del
+                                        módulo administrativo de Ecosistemas a un nuevo proyecto.
+                                        siguiendo los lineamientos del banco y cumpliendo con los pilares WAF (Web
+                                        Application Firewall) y Resilience Hub,
+                                        por medio de una herramienta interna de aprovisionamiento de recursos en la nube
+                                        para AWS.
+                                    </p>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                    <section class="resume__rigth">
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Stack <span class="subtitle__color">Tecnológico</span></h2>
+                        </header>
+
+                        <div class="resume__skills">
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">JMeter</h4>
+                                <span>
+                                    <h4 class="skills__text">Nestjs</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">DevOps</h4>
+                                <span>
+                                    <h4 class="skills__text">Migración a la nube</h4>
+                                </span>
+                            </article>
+                            
+                            <article class="skills__title">
+                                <h4 class="skills__text">SASS</h4>
+                                <span>
+                                    <h4 class="skills__text">Babel</h4>
+                                </span>
+                            </article>
+                          
+                            <article class="skills__title">
+                                <h4 class="skills__text">MEAN</h4>
+                                <span>
+                                    <h4 class="skills__text">Servicios REST full</h4>
+                                </span>
+                            </article>
+                         
+                            <article class="skills__title">
+                                <h4 class="skills__text">Express</h4>
+                                <span>
+                                    <h4 class="skills__text">Node.js</h4>
+                                </span>
+                            </article>
+                       
+                            <article class="skills__title">
+                                <h4 class="skills__text">JQuery</h4>
+                                <span>
+                                    <h4 class="skills__text">Computación en la nube</h4>
+                                </span>
+                            </article>
+                                                                                  
+                            <article class="skills__title">
+                                <h4 class="skills__text">Srum</h4>
+                                <span>
+                                    <h4 class="skills__text">CloudFormation</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Angular</h4>
+                                <span>
+                                    <h4 class="skills__text">Laravel</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Spring Boot</h4>
+                                <span>
+                                    <h4 class="skills__text">Azure DevOps</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Servicios en la nube</h4>
+                                <span>
+                                    <h4 class="skills__text">Django</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">MariaDB</h4>
+                                <span>
+                                    <h4 class="skills__text">MySQLi</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Astro</h4>
+                                <span>
+                                    <h4 class="skills__text">Tailwind CSS</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Servicios en la nube</h4>
+                                <span>
+                                    <h4 class="skills__text">Django</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Karma</h4>
+                                <span>
+                                    <h4 class="skills__text">Docker</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">PostgreSQL</h4>
+                                <span>
+                                    <h4 class="skills__text">Kubernetes</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Jest</h4>
+                                <span>
+                                    <h4 class="skills__text">Workbench</h4>
+                                </span>
+                            </article>
+           
+                            <article class="skills__title">
+                                <h4 class="skills__text">MySQL</h4>
+                                <span>
+                                    <h4 class="skills__text">DDD</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Figma</h4>
+                                <span>
+                                    <h4 class="skills__text">LocalStack</h4>
+                                </span>
+                            </article>
+                                       
+                            <article class="skills__title">
+                                <h4 class="skills__text">Microsoft SQL Server</h4>
+                                <span>
+                                    <h4 class="skills__text">Playwright</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">SQL Lite</h4>
+                                <span>
+                                    <h4 class="skills__text">MongoDB</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Git</h4>
+                                <span>
+                                    <h4 class="skills__text">Jira</h4>
+                                </span>
+                            </article>
+
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Habilidades de <span
+                                    class="subtitle__color">programación</span></h2>
+                        </header>
+
+                        <div class="resume__skills">
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Java</h4>
+                                <span>
+                                    <h4 class="skills__text">Javascript</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Typescript</h4>
+                                <span>
+                                    <h4 class="skills__text">Python</h4>
+                                </span>
+                            </article>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Php</h4>
+                                <span>
+                                    <h4 class="skills__text">C#</h4>
+                                </span>
+                            </article>
+
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Area de <span class="subtitle__color">conocimiento</span></h2>
+                        </header>
+
+                        <div class="resume__knowledges">
+                            <ul class="knowledges__list">
+                                <li class="knowledges__option">Programación</li>
+                                <li class="knowledges__option">Desarrollo web</li>
+                                <li class="knowledges__option">Cloud</li>
+                                <li class="knowledges__option">Testing</li>
+                                <li class="knowledges__option">Arquitecturas de software</li>
+                                <li class="knowledges__option">Infraestructura</li>
+
+                            </ul>
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="resume__certificates">
+
+                    <header class="certificates__subheader">
+                        <h2 class="certificates__subtitle">Cursos y <span class="subtitle__color">Certificados</span>
+                        </h2>
+                    </header>
+
+                    <section class="certificates__container">
+
+                        <article class="certificates__certificate">
+
+                            <div class="certificate__logo">
+                                <a href="https://www.udemy.com/certificate/UC-19053fe9-d250-4aba-adc4-0577a37a31ed/">
+                                    <img src="assets/certificados/Master en javascript.jpg" class="certificate__image"
+                                        alt="Certificado Master en Javascript">
+                                </a>
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Master en Javascript: js, JQuery, Angular, Node.js</h4>
+                                <span class="certificate__id">Url del certificado:
+                                    ude.my/UC-19053fe9-d250-4aba-adc4-0577a37a31ed</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <a href="https://www.udemy.com/certificate/UC-63c72440-ac64-4d84-adda-29f0d215b406/">
+                                    <img src="assets/certificados/AWS Cloud Practitioner.png" class="certificate__image"
+                                        alt="Certificado AWS Cloud Practitioner">
+                                </a>
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">AWS Cloud Practitioner</h4>
+                                <span class="certificate__id">Url del certificado:
+                                    ude.my/UC-63c72440-ac64-4d84-adda-29f0d215b406</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <a href="https://www.udemy.com/certificate/UC-7badbf0d-19a3-42d3-b8c6-526c7dc4a6b5/">
+                                    <img src="assets/certificados/AWS desde cero.png" class="certificate__image"
+                                        alt="Certificado AWS desde cero">
+                                </a>
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">AWS desde cero</h4>
+                                <span class="certificate__id">Url del certificado:
+                                    ude.my/UC-7badbf0d-19a3-42d3-b8c6-526c7dc4a6b5</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <a href="https://certiprof.com/es">
+                                    <img src="assets/certificados/SCRUM Foundation.png" class="certificate__image"
+                                        alt="Certificado SCRUM Foundation">
+                                </a>
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">SCRUM Foundation</h4>
+                                <span class="certificate__id">ID de verificación: 79036688 para consultar en
+                                    https://certiprof.com/es</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <a href="https://www.udemy.com/certificate/UC-d8447bde-e9c5-474e-bf55-de11f9b53402/">
+                                    <img src="assets/certificados/Master en css.png" class="certificate__image"
+                                        alt="Certificado Master en CSS">
+                                </a>
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Master en CSS: Responsive, SASS, Flexbox, Grid y
+                                    Booststrap</h4>
+                                <span class="certificate__id">Url del certificado:
+                                    ude.my/UC-d8447bde-e9c5-474e-bf55-de11f9b53402</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <a href="https://www.udemy.com/certificate/UC-6e76a0f5-4b46-426a-b819-d15875a52aa7/">
+                                    <img src="assets/certificados/Curso de html desde cero.png"
+                                        class="certificate__image" alt="Certificado curso de HTML5 desde cero">
+                                </a>
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Curso de HTML5 desde cero</h4>
+                                <span class="certificate__id">Url del certificado:
+                                    ude.my/UC-6e76a0f5-4b46-426a-b819-d15875a52aa7</span>
+                            </div>
+                        </article>
+
+                    </section>
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+</body>
+
+</html>

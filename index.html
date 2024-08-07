@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" type="text/css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/scroll.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/efect.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/dark.css" type="text/css">
+
+    <script src="assets/js/menu.js" defer type="text/javascript"></script>
+    <script src="assets/js/dark.js" defer type="text/javascript"></script>
+
+    <script>
+        (function() {
+            const theme = localStorage.getItem("theme") || "light";
+            document.documentElement.classList.add(theme);
+        })();
+    </script>
+
+    <title>Portafolio - Dilan Acosta</title>
+</head>
+
+<body>
+
+    <!-- Boton de tema -->
+    <div class="switcher">
+        <button class="switcher__btn">
+
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+        </button>
+    </div>
+
+    <!-- Layout principal -->
+    <div class="layout">
+
+        <!-- Aside (info) -->
+        <aside class="layout__aside">
+
+            <section class="aside__user-info">
+
+                <!-- Información general -->
+                <div class="user-info__general-info">
+
+                    <div class="user-info__container-image">
+                        <img class="user-info__image" src="assets/img/default_img.jpg" alt="Foto de perfil">
+                    </div>
+
+                    <h2 class="user-info__name">Dilan Acosta</h2>
+                    <h4 class="user-info__job">Desarrollador web / software</h4>
+                </div>
+
+                <!-- Menú de navegación -->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="estudios.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Estudios</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- Links o redes sociales -->
+                <div class="user-info__links">
+
+                      <ul class="user-links__social">
+
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/dilan-acosta/" class="social__link" target="_blank">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                    
+                </div>
+
+                <!-- Boton de hoja de vida -->
+                <div class="user-info__buttons" >
+                    <a href="assets/img/maquetacion1.png" class="user-info__btn" download="maquetacion1.png">Descargar hoja de vida</a>
+                </div>
+
+                <!-- Pie de página -->
+                <footer class="user-info__footer">
+                    &copy; 2024 Dilan Acosta
+                </footer>
+
+            </section>
+
+        </aside>
+
+        <!-- Menu responsive -->
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
+        <!-- Contenido principal -->
+        <main class="layout__content">
+
+            <section class="content__page">
+                <h1 class="page__name border">Dilan Acosta</h1>
+                <h1 class="page__name wave">Dilan Acosta</h1>
+                <h2 class="page__job">Ingeniero de software</h2>
+            </section>
+
+        </main>
+
+    </div>
+</body>
+
+</html>
