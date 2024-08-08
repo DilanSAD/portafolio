@@ -339,22 +339,28 @@ body {
 
 @media (max-width: 500px) {
 
-    .layout {
+    body {
 
-        .layout__content {
+        .layout {
 
-            .content__page {
+            .layout__content {
+    
+                .content__page {
+    
+                    .page__name {
+                        font-size: 3rem;
+                    }
 
-                .page__name {
-                    font-size: 5.3rem;
+                    .page__job {
+                        font-size: 1.5rem;
+                    }
                 }
-
-                .page__job {
-                    font-size: 2rem;
-                }
-
             }
         }
     }
-
 }
+
+
+
+
+
