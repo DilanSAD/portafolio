@@ -1,38 +1,3 @@
-/* Variables */
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-principal: #fff;
-        --color-secondary: #04b4e0;
-        --color-background: #e9e9e9;
-        --color-transparent: transparent;
-
-        --color-icons: #b5b6b7;
-        --color-text: #555;
-        --color-titles: #222;
-        --color-subtitles: #888;
-
-        --color-border: #e2e2e2;
-        --color-details: #8f8e8e;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-principal: #181616;  
-        --color-secondary: #1e90ff;   
-        --color-background: #181818;   
-        --color-transparent: transparent; 
-    
-        --color-icons: #b5b6b7;       
-        --color-text: #e0e0e0;          
-        --color-titles: #ffffff;        
-        --color-subtitles: #888;  
-              
-        --color-border: #333;           
-        --color-details: #a8a4a4;   
-    }
-}
-
 /* Estilos generales */
 h1,
 h2,
@@ -363,6 +328,10 @@ body {
 .resume__certificates,
 .content__contact {
     width: 100%;
+
+    .certificates__subheader {
+        padding-top: 2.5rem;
+    }
 
     .services__header,
     .extra__header,
